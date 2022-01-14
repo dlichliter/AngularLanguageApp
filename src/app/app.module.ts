@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
@@ -31,5 +32,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
   ],
 })
 export class AppModule {
-
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faTrophy);
+  }
 }
