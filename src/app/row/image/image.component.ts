@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-image',
@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
   ],
 })
 
-export class ImageComponent {}
+export class ImageComponent {
+  @Input() imageUrl: string;
+  @Input() imageName: string;
+}
