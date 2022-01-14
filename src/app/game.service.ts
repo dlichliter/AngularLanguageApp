@@ -19,6 +19,10 @@ export class GameService {
   private timeLeftPercent = 0;
   private gameEnded = false;
 
+  public getGameEnded(): boolean {
+    return this.gameEnded;
+  }
+
   public getTimeLeftPercent(): number {
     return this.timeLeftPercent;
   }
@@ -47,7 +51,8 @@ export class GameService {
     this.score = 0;
     this.currentQuestion = '';
     this.getRandomQuestions();
-    this.gameEnded = false;
+    this.gameEnded = true;
+    this.timeLeftPercent = 0;
 
     this.interval = setInterval(() => {
       if (this.timeLeftPercent < 100) {

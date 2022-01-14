@@ -11,6 +11,7 @@ import { ScoreComponent } from './score/score.component';
 import { RowComponent } from './row/row.component';
 import { ImageComponent } from './row/image/image.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { GameOverComponent } from './game-over/game-over.component';
 
 @NgModule({
   bootstrap: [
@@ -24,6 +25,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     RowComponent,
     ImageComponent,
     ProgressBarComponent,
+    GameOverComponent
   ],
   imports: [
     BrowserModule,
