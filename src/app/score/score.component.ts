@@ -10,7 +10,5 @@ import { GameService } from '../game.service';
 })
 
 export class ScoreComponent {
-  constructor(public gameService: GameService) {
-
-  }
+  constructor(public gameService: GameService) { }
 }
