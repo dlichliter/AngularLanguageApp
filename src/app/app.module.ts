@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { QuestionComponent } from './question/question.component';
 import { NotificationComponent } from './notification/notification.component';
 import { ScoreComponent } from './score/score.component';
+import { RowComponent } from './row/row.component';
+import { ImageComponent } from './row/image/image.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   bootstrap: [
@@ -17,6 +20,9 @@ import { ScoreComponent } from './score/score.component';
     QuestionComponent,
     NotificationComponent,
     ScoreComponent,
+    RowComponent,
+    ImageComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,
