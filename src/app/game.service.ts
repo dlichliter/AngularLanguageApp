@@ -21,6 +21,12 @@ export class GameService {
     return this.currentQuestion;
   }
 
+  public startGame(): void {
+    this.score = 0;
+    this.currentQuestion = '';
+    this.getRandomQuestions();
+  }
+
   private getRandomQuestions(): void {
     // randomize array
     Questions.sort(() => .5 - Math.random());

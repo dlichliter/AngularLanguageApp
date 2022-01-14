@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-question',
@@ -8,4 +9,6 @@ import { Component } from '@angular/core';
   ],
 })
 
-export class QuestionComponent {}
+export class QuestionComponent {
+  constructor(public gameService: GameService) {}
+}
