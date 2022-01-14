@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-progress-bar',
@@ -8,4 +9,6 @@ import { Component } from '@angular/core';
   ],
 })
 
-export class ProgressBarComponent {}
+export class ProgressBarComponent {
+  constructor(public gameService: GameService) {}
+}
